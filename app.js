@@ -1,5 +1,8 @@
-function sayHello(name){
-    console.log('Hello ' + name);
-}
+const express = require('express');
+const bodyParser = require('body-parser');
 
-sayHello('Mosh');
+const app = express();
+
+app.user(bodyParser.json())
+
+app.listen(3000);
