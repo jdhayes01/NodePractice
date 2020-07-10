@@ -44,8 +44,14 @@ app.use(
                 return ['Romantic', 'Sailing', 'Coding'];
             },
             createEvent: (args) => {
-                const eventName = args.name;
-                return eventName;
+                const event = {
+                    _id: Math.random().toString(),
+                    title: args.title,
+                    description: args.description,
+                    price: args.price,
+                    dates: new Date().toISOString()
+                };
+                events.push.(event);
             }
         },
         graphiql: true
