@@ -63,7 +63,7 @@ app.use(
 );
 
 mongoose.connect(
-    'mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@nodetutorial.bugso.mongodb.net/<dbname>?retryWrites=true&w=majority'
+    'mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@nodetutorial.bugso.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority'
 ).then(() => {
     app.listen(3000);
 }).catch(err => {

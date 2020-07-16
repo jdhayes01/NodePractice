@@ -1,6 +1,7 @@
 {
     "env":{
         "MONGO_USER": "admin",
-        "MONGO_PASSWORD": "Node1397"
+        "MONGO_PASSWORD": "Node1397",
+        "MONGO_DB": "node-dev"
     }
 }
